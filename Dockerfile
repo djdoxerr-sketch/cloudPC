@@ -11,12 +11,11 @@ LABEL maintainer="thelamer"
 
 # title
 ENV TITLE="XomxoOS"
-
 RUN \
   echo "**** add icon ****" && \
   curl -o \
     /usr/share/selkies/www/icon.png \
-    https://raw.githubusercontent.com/linuxserver/docker-templates/master/linuxserver.io/img/webtop-logo.png && \
+    https://dev-xomxo.vercel.app/logo.png && \
   echo "**** install packages ****" && \
   apk add --no-cache \
     adw-gtk3 \
